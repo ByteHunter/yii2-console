@@ -1,0 +1,33 @@
+{
+  "name" : "bytehunter/yii2-console",
+  "description" : "Yii2 template focused to only console commands",
+  "keywords" : [
+    "yii2",
+    "framework",
+    "console",
+    "application template",
+    "bytehunter"
+  ],
+  "homepage" : "https://github.com/ByteHunter/yii2-console/wiki",
+  "type" : "project",
+  "license" : "BSD-3-Clause",
+  "minimum-stability" : "stable",
+  "require" : {
+    "php" : ">=7.4.0",
+    "yiisoft/yii2": "^2.0"
+  },
+  "require-dev" : {
+  },
+  "config" : {
+    "process-timeout" : 1800
+  },
+  "extra" : {
+    "config.fxp-asset.installer-paths" : {
+      "npm-asset-library" : "vendor/npm",
+      "bower-asset-library" : "vendor/bower"
+    }
+  },
+  "scripts" : {
+    "post-install-cmd" : "php init --env=Development --overwrite=n"
+  }
+}
